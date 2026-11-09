@@ -1,0 +1,55 @@
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-family: "Rajdhani", "Chakra Petch", -apple-system, sans-serif; }
+        body { background: #030712; color: #f0f9ff; line-height: 1.7; overflow-x: hidden; }
+        a { color: inherit; text-decoration: none; transition: all 0.25s ease; }
+        img, svg { max-width: 100%; height: auto; }
+        .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+        .motion-art-frame { width: 100%; min-height: 320px; display: flex; align-items: center; justify-content: center; }
+        .motion-svg { width: 100%; height: auto; max-height: 360px; filter: drop-shadow(0 0 30px rgba(56,189,248,0.45)); }
+
+        .plasma-nav { background: rgba(3, 7, 18, 0.9); backdrop-filter: blur(14px); border-bottom: 1px solid #1e293b; position: sticky; top: 0; z-index: 100; }
+        .plasma-nav-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+        .plasma-logo { font-size: 22px; font-weight: 800; color: #38bdf8; text-shadow: 0 0 12px rgba(56,189,248,0.5); }
+        .plasma-menu { display: flex; gap: 22px; list-style: none; }
+        .plasma-menu a { font-size: 15px; font-weight: 600; color: #7dd3fc; }
+        .plasma-menu a:hover, .plasma-menu a.active { color: #ffffff; text-shadow: 0 0 10px #38bdf8; }
+
+        .btn-aff-cta { display: inline-flex; align-items: center; justify-content: center; padding: 13px 28px; font-weight: 800; font-size: 15px; border-radius: 4px; background: linear-gradient(135deg, #0284c7, #38bdf8); color: #030712; border: 1px solid #bae6fd; cursor: pointer; box-shadow: 0 0 20px rgba(56,189,248,0.4); }
+        .btn-aff-cta:hover { transform: translateY(-2px); box-shadow: 0 0 30px rgba(56,189,248,0.7); }
+        .btn-tizi-dofollow { display: inline-flex; align-items: center; justify-content: center; padding: 12px 26px; font-weight: 700; font-size: 15px; border-radius: 4px; border: 1px solid #1e293b; background: #0b1220; color: #38bdf8; margin-left: 14px; }
+        .btn-tizi-dofollow:hover { border-color: #38bdf8; color: #fff; }
+
+        .hero-section { padding: 65px 0 55px; text-align: center; }
+        .hero-tag { display: inline-block; padding: 5px 16px; background: rgba(56,189,248,0.12); border: 1px solid #38bdf8; border-radius: 4px; font-size: 13px; color: #7dd3fc; margin-bottom: 22px; }
+        .hero-title { font-size: 38px; font-weight: 900; line-height: 1.3; margin-bottom: 18px; color: #fff; }
+        .hero-title-highlight { color: #38bdf8; text-shadow: 0 0 25px rgba(56,189,248,0.6); }
+        .hero-desc { max-width: 800px; margin: 0 auto 30px; font-size: 16px; color: #94a3b8; line-height: 1.85; }
+        .hero-actions { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; }
+
+        .plasma-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 45px; }
+        .plasma-card { background: #0b1220; border: 1px solid #1e293b; border-radius: 6px; padding: 28px; position: relative; }
+        .plasma-card::after { content: ''; position: absolute; top: 0; left: 0; width: 8px; height: 8px; border-top: 2px solid #38bdf8; border-left: 2px solid #38bdf8; }
+        .plasma-card h3 { color: #38bdf8; font-size: 18px; margin-bottom: 10px; font-weight: 700; }
+
+        .pricing-section { padding: 70px 0; background: #010409; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .price-card { background: #0b1220; border: 1px solid #1e293b; border-radius: 8px; padding: 34px 22px; text-align: center; }
+        .price-card.featured { border-color: #38bdf8; box-shadow: 0 0 35px rgba(56,189,248,0.3); }
+        .price-amount { font-size: 36px; font-weight: 900; color: #38bdf8; margin: 16px 0; }
+
+        .plasma-footer { background: #010307; border-top: 1px solid #1e293b; padding: 50px 0 30px; margin-top: 70px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 30px; margin-bottom: 30px; }
+        .footer-col h4 { font-size: 15px; color: #38bdf8; margin-bottom: 14px; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 8px; font-size: 14px; color: #94a3b8; }
+        .footer-bottom { text-align: center; font-size: 13px; color: #334155; padding-top: 20px; border-top: 1px solid #0f172a; }
+
+        @media (max-width: 860px) {
+          .plasma-grid, .pricing-grid, .footer-grid { grid-template-columns: 1fr; }
+          .plasma-menu { flex-wrap: wrap; justify-content: center; gap: 12px; }
+          .hero-title { font-size: 26px; }
+          .btn-aff-cta, .btn-tizi-dofollow { width: 100%; margin-left: 0 !important; margin-bottom: 12px; }
+        }
+        
